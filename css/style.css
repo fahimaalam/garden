@@ -1,0 +1,803 @@
+/*
+Author Name:Fahima Alam;
+Mail Address:;
+Site url:;
+GPL license:3.4.1;
+*/
+
+/*
+====Index====
+1. Global CSS
+2. Hero Section
+3. About Section
+4. Intro Section
+5. Feature Section
+6. Portfolio Section
+7. Contact Section
+8. Footer Section
+9. Media Query
+*/
+
+/* Global css*/
+
+body{
+	font-family: 'Oswald', sans-serif;
+}
+h1{
+	padding: 220px 0px 0px 0px;
+	font-size: 105px;
+	color: white;
+	font-family: 'Playball', cursive;
+}
+h2{
+	padding: 70px 0px 15px 0px;
+	font-size: 53px;
+	font-family: 'Playball', cursive;
+}
+h3{
+	font-family: 'Playball', cursive;
+	padding: 40px 0px 5px 0px;
+	font-size: 32px;
+}
+h4{
+	padding: 0px 0px 20px 0px;
+	font-size: 28px;
+	color: white;
+}
+h5{
+	font-family: 'Playball', cursive;
+	padding: 70px 0px 0px 0px;
+	font-size: 53px;
+}
+h6{
+	font-family: 'Playball', cursive;
+	font-size: 53px;
+	padding: 65px 0px 0px 0px;
+}
+span{
+	border: 2px solid white;
+	width: 45%;
+	display: block;
+	margin: 20px auto;
+}
+p{
+	padding: 5px 0px 40px 0px;
+	font-size: 17px;
+	line-height: 33px;
+	font-weight: lighter;
+}
+.btn{
+	padding: 10px 35px 10px 35px;
+	font-size: 20px;
+	margin: 90px 0px 0px 0px;
+	color: black;
+	background-color: white;
+	border-radius: 10px;
+}
+.btn:hover{
+	color: white;
+	background-color:#88001b;
+	border: 1px solid white;
+}
+
+/* Theme css*/
+/******************** Header Section Start********************/
+nav{
+	padding: 20px 0px 85px 0px;	
+}
+.logo{
+	background-color: white;
+	padding: 20px 0px 25px 140px;
+}
+/****************** Hero Section Start*******************/
+.hero{
+	background: url(../img/banner-one.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+.hero-content{
+	background-color: #00000078;
+}
+.fa.fa-angle-down{
+	display: block;
+    margin: 0 auto;
+    color:#fff;
+    font-size: 40px;
+    padding: 88px 0px 85px 0px;
+}
+/******************** About Section Start********************/
+.about{
+	text-align: center;
+	background-color: #f6f9f9;
+}
+.about span{
+	border: 2px solid #88001b;
+	width: 15%;
+	display: block;
+	margin: 10px auto;
+}
+/******************** Intro Section Start********************/
+.intro{
+	padding: 60px 0px 60px 0px;
+}
+.intro-content{
+
+}
+.intro-content p{
+	font-size: 15px;
+}
+.intro-image{
+	padding: 10px 0px 10px 100px;
+}
+.intro-btn{
+	padding: 6px 25px 6px 25px;
+	font-size: 17px;
+	color: white;
+	background-color: #48ad31;
+	border-radius: 6px;
+	margin: 0px 25px 0px 0px;
+	border: none;
+}
+.intro-btn:hover{
+	color: white;
+	background-color:#88001b;
+	border: 1px solid white;
+}
+.intro-btn-two{
+	padding: 6px 25px 6px 25px;
+	font-size: 17px;
+	color: white;
+	border-radius: 6px;
+	background-color: #88001b;
+	border: none;
+}
+.intro-btn-two:hover{
+	color: white;
+	background-color:#ffbf1f;
+	border: 1px solid white;
+}
+.intro-btn-three{
+	padding: 6px 25px 6px 25px;
+	font-size: 17px;
+	color: white;
+	background-color: #ffbf1f;
+	border-radius: 6px;
+	margin: 0px 0px 0px 25px;
+	border: none;
+}
+.intro-btn-three:hover{
+	color: white;
+	background-color:#48ad31;
+	border: 1px solid white;
+}
+/******************** Feature Section Start********************/
+.feature{
+	padding: 50px 0px 0px 0px;
+	text-align: center;
+	background-color:#e6e9e9 ;
+}
+.feature-one{
+}
+.fa.fa-tree{
+	font-size: 75px;
+	color: white;
+	background: linear-gradient(to right,#48ad31 50%, #64b326 50%);
+	padding: 17px 30px;
+}
+.feature-one p{
+	  font-size: 15px;
+}
+.feature-two{
+}
+.fa.fa-trello{
+	font-size: 75px;
+	color: white;
+	background: linear-gradient(to right,#48ad31 50%, #64b326 50%);
+	padding: 17px 30px;
+}
+.feature-two p{
+	  font-size: 15px;
+}
+.feature-three{
+}
+.fa.fa-pagelines{
+	font-size: 75px;
+	color: white;
+	background: linear-gradient(to right,#48ad31 50%, #64b326 50%);
+	padding: 17px 30px;
+}
+.feature-three p{
+	  font-size: 15px;
+}
+/******************** Portfolio Section Start ********************/
+.portfolio{
+	text-align: center;
+	background-color: #f6f9f9;
+}
+.portfolio-content{
+}
+.portfolio-content p{
+	font-size: 20px;
+}
+.image-hover{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.image-hover-content{
+	position: absolute;
+	background: #48ad319e;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: -100%;
+	transition: 0.4s ease-in-out;
+}
+.image-hover:hover .image-hover-content{
+	right: 0;
+}
+.portfolio-second{
+	padding: 50px 0px 90px 0px;
+}
+.fa.fa-search-plus{
+	position: absolute;
+	color: white;
+	font-size: 30px;
+	top: 42%;
+	left: 40%;
+}
+.fa.fa-link{
+	position: absolute;
+	color: white;
+	font-size: 30px;
+	top: 42%;
+}
+/******************** Contact Section Start********************/
+.contact{
+	background: url(../img/contact.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.contact-content{
+	background-color: #0000009c;
+}
+.contact-content h3{
+	text-align: center;
+	color: white;
+	font-size: 55px;
+	padding: 100px 0px 0px 0px;
+}
+.contact-content p{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	padding: 0px 0px 0px 200px;
+}
+.form{
+	padding: 30px 0px 200px 0px;
+}
+.form-control{
+	padding: 10px 0px 10px 15px;
+	margin: 10px 0px 20px 0px;
+	background: #ffffffad;
+	color: #6d727a;
+}
+.check-control{
+
+}
+.label-control{
+	color: white;
+	padding: 10px 0px 0px 5px;
+}
+.custom-btn{
+	float: right;
+	padding: 5px 20px 5px 20px;
+	border: none;
+	border-radius: 11px;
+}
+.custom-btn:hover{
+	color: white;
+	background-color:#48ad31;
+	border: 1px solid white;
+}
+/******************** Footer Section Start********************/
+footer{
+	background-color: #f6f9f9;
+	padding: 25px 0px 25px 0px;
+}
+.footer-content{
+	color: #6d727a;
+	font-family: 'Playball', cursive;
+	font-size: 19px;
+}
+.footer-icons{
+
+}
+.fa.fa-facebook{
+	padding: 6px 10px 6px 10px;
+	background-color: #48ad31;
+	color: white;
+	font-size: 16px;
+	margin: 0px 2px 0px 2px;
+	transition: 0.4s ease-in-out;
+}
+.fa.fa-facebook:hover{
+	background-color:#88001b;
+	border: 1px solid white;
+	transform: rotate(360deg);
+}
+.fa.fa-twitter{
+	padding: 6px 10px 6px 10px;
+	background-color: #48ad31;
+	color: white;
+	font-size: 16px;
+	margin: 0px 2px 0px 2px;
+	transition: 0.4s ease-in-out;
+}
+.fa.fa-twitter:hover{
+	background-color:#88001b;
+	border: 1px solid white;
+	transform: rotate(360deg);
+}
+.fa.fa-linkedin{
+	padding: 6px 10px 6px 10px;
+	background-color: #48ad31;
+	color: white;
+	font-size: 16px;
+	margin: 0px 2px 0px 2px;
+	transition: 0.4s ease-in-out;
+}
+.fa.fa-linkedin:hover{
+	background-color:#88001b;
+	border: 1px solid white;
+	transform: rotate(360deg);
+}
+.fa.fa-envelope{
+	padding: 6px 10px 6px 10px;
+	background-color: #48ad31;
+	color: white;
+	font-size: 16px;
+	margin: 0px 2px 0px 2px;
+	transition: 0.4s ease-in-out;
+}
+.fa.fa-envelope:hover{
+	background-color:#88001b;
+	border: 1px solid white;
+	transform: rotate(360deg);
+}
+
+/*************** Media Query ********************/ 
+/*************** Small Device  ********************/ 
+@media(min-width: 320px) and (max-width: 501px){
+.logo{
+	padding: 0px 0px 15px 20px;
+}
+h1{
+	padding: 50px 0px 0px 0px;
+	font-size: 52px;
+}
+h4{
+	padding: 0px 35px 0px 35px;
+	font-size: 19px;
+}
+span{
+	width: 41%;
+	display: block;
+	margin: 13px auto;
+}
+.btn{
+	padding: 5px 12px 5px 12px;
+	font-size: 15px;
+	margin: 45px 0px 0px 0px;
+}
+.fa.fa-angle-down {
+  font-size: 35px;
+  padding: 22px 0px 45px 0px;
+}
+h2{
+	padding: 30px 0px 0px 0px;
+	font-size: 35px;
+}
+.about span {
+  width: 28%;
+  display: block;
+  margin: 5px auto;
+}
+p {
+  padding: 5px 0px 0px 0px;
+  font-size: 13px;
+  line-height: 30px;
+}
+h6 {
+  font-size: 36px;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+}
+.intro {
+  padding: 60px 0px 0px 0px;
+}
+.intro-content p {
+  font-size: 13px;
+  padding: 0px 10px 0px 10px;
+}
+.intro-btn{
+	padding: 4px 13px 4px 13px;
+	font-size: 14px;
+	margin: 0px 10px 0px 3px;
+}
+.intro-btn-two{
+	padding: 4px 13px 4px 13px;
+	font-size: 14px;
+	margin: 0px 10px 0px 0px;
+}
+.intro-btn-three{
+	padding: 4px 13px 4px 13px;
+	font-size: 14px;
+	margin: 0px 10px 0px 0px;
+}
+.intro-image{
+  	padding: 40px 0px 0px 0px;
+}
+.fa.fa-tree{
+  	font-size: 40px;
+}
+h3 {
+  	padding: 10px 0px 0px 0px;
+  	font-size: 23px;
+}
+.feature-one p {
+  	font-size: 13px;
+}
+.fa.fa-trello{
+	font-size: 40px;
+}
+.feature-two p {
+  	font-size: 13px;
+}
+.fa.fa-pagelines{
+	font-size: 40px;
+}
+.feature-three p {
+  	font-size: 13px;
+}
+h5 {
+  padding: 40px 0px 0px 0px;
+  font-size: 38px;
+}
+.portfolio-content p {
+  font-size: 15px;
+}
+.portfolio-second {
+  padding: 0px 0px 38px 0px;
+}
+.contact-content h3 {
+  font-size: 42px;
+  padding: 20px 0px 0px 0px;
+}
+.contact-content p {
+  font-size: 16px;
+  padding: 0px 0px 0px 0px;
+}
+.form {
+  padding: 0px 0px 40px 0px;
+}
+.form-control {
+  padding: 0px 0px 0px 10px;
+  margin: 0px 0px 10px 0px;
+  font-size: 12px;
+}
+.label-control {
+  padding: 0px 0px 0px 5px;
+  font-size: 13px;
+}
+.custom-btn {
+  padding: 2px 13px 3px 13px;
+  font-size: 12px;
+}
+.footer-content {
+  font-size: 17px;
+  padding: 0px 0px 11px 0px;
+  text-align: center;
+}
+.footer-icons {
+  text-align: center;
+}
+.carousel-inner {
+    height: 380px;
+}
+}
+@media(min-width: 455px) and (max-width: 501px){
+.intro-btn {
+  margin: 0px 10px 0px 85px;
+}
+}
+@media(min-width: 442px) and (max-width: 445px){
+.image-hover {
+  width: 99%;
+}
+}
+@media(min-width: 446px) and (max-width: 449px){
+.image-hover {
+  width: 98%;
+}
+}
+@media(min-width: 450px) and (max-width: 455px){
+.image-hover {
+  width: 97%;
+}
+}
+@media(min-width: 456px) and (max-width: 458px){
+.image-hover {
+  width: 96%;
+}
+}
+@media(min-width: 459px) and (max-width: 464px){
+.image-hover {
+  width: 96%;
+}
+}
+@media(min-width: 465px) and (max-width: 469px){
+.image-hover {
+  width: 95%;
+}
+}
+@media(min-width: 460px) and (max-width: 466px){
+.image-hover {
+  width: 94%;
+}
+}
+@media(min-width: 466px) and (max-width: 469px){
+.image-hover {
+  width: 93%;
+}
+}
+@media(min-width: 470px) and (max-width: 477px){
+.image-hover {
+  width: 92%;
+}
+}
+@media(min-width: 478px) and (max-width: 484px){
+.image-hover {
+  width: 91%;
+}
+}
+@media(min-width: 485px) and (max-width: 494px){
+.image-hover {
+  width: 89%;
+}
+}
+@media(min-width: 494px) and (max-width: 501px){
+.image-hover {
+  width: 80%;
+}
+}
+
+/*************** Medium Device  ********************/ 
+@media(min-width: 502px) and (max-width: 767px){
+.logo{
+	 padding: 20px 0px 25px 45px;
+}
+h1 {
+  padding: 38px 0px 0px 0px;
+  font-size: 64px;
+}
+h4 {
+  padding: 0px 0px 0px 0px;
+  font-size: 17px;
+}
+.btn {
+  padding: 7px 22px 7px 22px;
+  font-size: 16px;
+  margin: 48px 0px 0px 0px;
+}
+.fa.fa-angle-down {
+  font-size: 40px;
+  padding: 25px 0px 10px 0px;
+}
+h2 {
+  padding: 41px 0px 15px 0px;
+  font-size: 45px;
+  text-align: center;
+}
+p {
+  padding: 5px 16px 25px 16px;
+  font-size: 14px;
+  line-height: 30px;
+}
+.intro {
+  padding: 0px 0px 0px 0px;
+}
+h6 {
+  font-size: 40px;
+  padding: 31px 0px 0px 0px;
+  text-align: center;
+}
+.intro-content p {
+  font-size: 14px;
+  padding: 0px 25px 0px 25px;
+}
+.intro-btn {
+  padding: 4px 20px 4px 20px;
+  font-size: 15px;
+  margin: 0px 20px 0px 26px;
+}
+.intro-btn-two {
+  padding: 4px 20px 4px 20px;
+  font-size: 15px;
+  margin: 0px 0px 0px 0px;
+}
+.intro-btn-three {
+  padding: 4px 20px 4px 20px;
+  font-size: 15px;
+}
+.intro-image {
+  padding: 29px 0px 10px 0px;
+}
+.fa.fa-tree {
+  font-size: 51px;
+}
+h3 {
+  padding: 22px 0px 5px 0px;
+  font-size: 30px;
+}
+.feature-one p {
+  font-size: 14px;
+}
+.fa.fa-trello {
+  font-size: 51px;
+}
+.feature-two p {
+  font-size: 14px;
+}
+.fa.fa-pagelines {
+  font-size: 51px;
+}
+.feature-three p {
+  font-size: 14px;
+}
+h5 {
+  padding: 32px 0px 0px 0px;
+  font-size: 40px;
+}
+.portfolio-content p {
+  font-size: 18px;
+}
+.image-hover {
+  width: 87%;
+}
+.form {
+  padding: 0px 0px 100px 0px;
+}
+.form-control {
+  padding: 3px 0px 3px 10px;
+  margin: 0px 0px 10px 0px;
+  font-size: 12px;
+}
+.label-control {
+  padding: 0px 0px 0px 5px;
+  font-size: 13px;
+}
+.custom-btn {
+  padding: 2px 13px 3px 13px;
+  font-size: 12px;
+}
+.footer-content {
+  font-size: 17px;
+  padding: 0px 0px 11px 0px;
+  text-align: center;
+}
+.footer-icons {
+  text-align: center;
+}
+.carousel-inner {
+    height: 380px;
+}
+}
+@media(min-width: 510px) and (max-width: 522px){
+.image-hover {
+  width: 84%;
+}
+}
+@media(min-width: 523px) and (max-width: 745px){
+.image-hover {
+  width: 79%;
+}
+}
+@media(min-width: 746px) and (max-width: 767px){
+.image-hover {
+  width: 75%;
+}
+}
+/*************** Large Device  ********************/ 
+@media(min-width: 768px) and (max-width: 1139px){
+h1 {
+  padding: 95px 0px 0px 0px;
+  font-size: 60px;
+}
+h4 {
+  font-size: 23px;
+}
+.btn {
+  padding: 8px 28px 8px 28px;
+  font-size: 18px;
+}
+.fa.fa-angle-down {
+  padding: 35px 0px 70px 0px;
+}
+h2 {
+  font-size: 50px;
+}
+p {
+  padding: 5px 0px 25px 0px;
+  font-size: 15px;
+}
+h6 {
+  font-size: 41px;
+}
+.intro {
+  padding: 0px 0px 45px 0px;
+}
+.intro-image {
+  padding: 160px 0px 10px 0px;
+}
+.intro-content p {
+  font-size: 14px;
+}
+
+.intro-btn {
+  padding: 4px 10px 4px 10px;
+  margin: 0px 0px 0px 24px;
+  font-size: 15px;
+}
+.intro-btn-two {
+  padding: 4px 10px 4px 10px;
+  margin: 0px 0px 0px 5px;
+  font-size: 15px;
+}
+.intro-btn-three {
+  padding: 4px 10px 4px 10px;
+  margin: 0px 0px 0px 5px;
+  font-size: 15px;
+}
+h3 {
+  font-size: 22px;
+}
+.feature-one p {
+  font-size: 13px;
+}
+.feature-two p {
+  font-size: 13px;
+}
+.feature-three p {
+  font-size: 13px;
+}
+.image-hover {
+  width: 100%;
+}
+.fa.fa-search-plus {
+  left: 35%;
+}
+.footer-content {
+  text-align: left;
+}
+.footer-icons {
+  text-align: left;
+}
+.form-control {
+  padding: 7px 6px 7px 10px;
+  font-size: 14px;
+}
+.label-control {
+  font-size: 15px;
+}
+.custom-btn {
+  padding: 5px 20px 5px 20px;
+  font-size: 14px;
+}
+}
+/*************** Large Device  ********************/ 
+@media(min-width: 1140px){
+
+}
+
